@@ -1,0 +1,358 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.roleBadge {
+  background-color: #18181b;
+  border: 1px solid #27272a;
+  color: #a1a1aa;
+  padding: 0.25rem 1rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #60a5fa; /* สีฟ้า */
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #a1a1aa;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btnPrimary {
+  background-color: #6366f1;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btnSecondary {
+  background-color: transparent;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  border: 1px solid #3f3f46;
+  font-weight: bold;
+}
+/* ================= Navbar ================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background-color: rgba(9, 9, 11, 0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #27272a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 50;
+}
+
+.navLogo {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.navLogo span {
+  color: #6366f1; /* สีม่วงเท่ๆ สไตล์โค้ด */
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  color: #a1a1aa;
+}
+
+.navLinks a:hover {
+  color: #fafafa;
+}
+
+.langSwitch {
+  display: flex;
+  gap: 0.5rem;
+  border-left: 1px solid #3f3f46;
+  padding-left: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+/* ================= Skills Section ================= */
+.skillsSection {
+  padding: 4rem 2rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.skillCard {
+  background-color: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.skillCard:hover {
+  transform: translateY(-5px); /* ลูกเล่นเวลาเอาเมาส์ชี้ให้การ์ดลอยขึ้นนิดนึง */
+}
+
+.skillCard h3 {
+  color: #60a5fa;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #27272a;
+  padding-bottom: 0.5rem;
+}
+
+.skillList {
+  list-style-type: none;
+  color: #a1a1aa;
+  line-height: 2;
+}
+/* ================= The Lab Section ================= */
+.labSection {
+  padding: 4rem 2rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.labSubtitle {
+  text-align: center;
+  color: #a1a1aa;
+  margin-bottom: 3rem;
+  margin-top: -2rem;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.projectCard {
+  background-color: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectImagePlaceholder {
+  height: 160px;
+  background: linear-gradient(45deg, #1e1b4b, #312e81);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  color: #6366f1;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.projectContent {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.projectTitle {
+  font-size: 1.25rem;
+  color: #fafafa;
+  margin: 0;
+}
+
+.statusTag {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.tagWip {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: #fbd38d;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.tagBeta {
+  background-color: rgba(99, 102, 241, 0.2);
+  color: #a5b4fc;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.tagDone {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.projectDesc {
+  color: #a1a1aa;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: auto;
+}
+
+.techBadge {
+  background-color: #27272a;
+  color: #d4d4d8;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 99px;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 1rem;
+  border-top: 1px solid #27272a;
+  padding-top: 1rem;
+}
+
+.projectLinks a {
+  font-size: 0.85rem;
+  color: #a1a1aa;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.projectLinks a:hover {
+  color: #60a5fa;
+}
+/* ================= Contact Section ================= */
+.contactSection {
+  padding: 4rem 2rem 8rem; /* เผื่อที่ว่างด้านล่างไว้เยอะๆ เว็บจะได้ดูไม่ตัน */
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contactBox {
+  background-color: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 16px;
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.contactTitle {
+  font-size: 2.5rem;
+  color: #fafafa;
+  margin-bottom: 1rem;
+}
+
+.contactSubtitle {
+  color: #a1a1aa;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  max-width: 500px;
+}
+
+.contactDetails {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contactLabel {
+  font-size: 0.75rem;
+  color: #6366f1;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.contactValue {
+  color: #d4d4d8;
+  font-size: 1rem;
+}
+
+.contactActions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.githubLink {
+  color: #a1a1aa;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.githubLink:hover {
+  color: #fafafa;
+}

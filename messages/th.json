@@ -1,0 +1,47 @@
+{
+  "Hero": {
+    "greeting": "สวัสดี ผมเก่ง",
+    "role": "นักพัฒนาเว็บ & แบ็คกราวด์ด้าน Cyber Security",
+    "headline": "สร้าง Web Application",
+    "highlight": "ด้วยรากฐานความปลอดภัย",
+    "description": "หลงใหลในการเขียน Next.js, React และการทำ Automation พร้อมเปลี่ยนไอเดียให้กลายเป็นระบบที่ใช้งานได้จริง",
+    "ctaPrimary": "พูดคุยโปรเจกต์ของคุณ",
+    "ctaSecondary": "ดูสิ่งที่ผมกำลังทดลอง"
+  },
+  "Navbar": {
+    "skills": "ทักษะ",
+    "lab": "ห้องทดลอง",
+    "contact": "ติดต่อ"
+  },
+  "Skills": {
+    "title": "เครื่องมือและทักษะ",
+    "frontend": "ส่วนหน้า (Frontend)",
+    "backend": "ระบบหลังบ้านและเครื่องมือ",
+    "core": "ความรู้พื้นฐาน"
+  },
+  "Lab": {
+    "title": "ห้องทดลอง & โปรเจกต์",
+    "subtitle": "ระบบ เครื่องมือ และไอเดียที่กำลังพัฒนา",
+    "viewCode": "ดูโค้ด",
+    "liveDemo": "ทดลองใช้",
+    "statusWip": "กำลังพัฒนา",
+    "statusBeta": "ทดสอบระบบ",
+    "statusDone": "เสร็จสมบูรณ์",
+    "posTitle": "Web POS & Inventory",
+    "posDesc": "ระบบจัดการหน้าร้านและคลังสินค้าสำหรับร้านค้าปลีก ออกแบบ UX/UI ให้ใช้งานง่ายดึงข้อมูลรวดเร็ว",
+    "tradeTitle": "SMC Trading Automation",
+    "tradeDesc": "สคริปต์เทรดอัตโนมัติและบอทช่วยเทรด (EA) ประยุกต์ใช้หลักการ Smart Money Concepts",
+    "hospTitle": "Hospital App Hub",
+    "hospDesc": "แอปพลิเคชันจัดการข้อมูลผู้ป่วยและระบบจัดการคิวสำหรับเพิ่มประสิทธิภาพในคลินิก"
+  },
+  "Contact": {
+    "title": "มาร่วมงานกันเถอะ",
+    "subtitle": "เปิดรับงานฟรีแลนซ์ และพร้อมพูดคุยสำหรับโอกาสงานใหม่ๆ",
+    "emailLabel": "อีเมล",
+    "emailValue": "kangnakub.5264@gmail.com",
+    "locationLabel": "พื้นที่",
+    "locationValue": "อุบลราชธานี, ประเทศไทย",
+    "btnText": "ส่งอีเมลหาผม",
+    "githubText": "ดูโค้ดบน GitHub"
+  }
+}

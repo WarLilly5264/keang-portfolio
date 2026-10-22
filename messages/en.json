@@ -1,0 +1,47 @@
+{
+  "Hero": {
+    "greeting": "Hi, I'm Keang.",
+    "role": "Frontend Developer & Cyber Security Background",
+    "headline": "Building Web Applications",
+    "highlight": "with Security Fundamentals",
+    "description": "Passionate about Next.js, React, and Automation. Turning ideas into robust, production-ready systems.",
+    "ctaPrimary": "Let's Talk Project",
+    "ctaSecondary": "View My Lab"
+  },
+  "Navbar": {
+    "skills": "Skills",
+    "lab": "The Lab",
+    "contact": "Contact"
+  },
+  "Skills": {
+    "title": "Tech Stack & Skills",
+    "frontend": "Frontend Development",
+    "backend": "Backend & Tools",
+    "core": "Core Knowledge"
+  },
+  "Lab": {
+    "title": "The Lab & Experiments",
+    "subtitle": "Systems, tools, and ideas currently in development",
+    "viewCode": "Code",
+    "liveDemo": "Demo",
+    "statusWip": "WIP",
+    "statusBeta": "BETA",
+    "statusDone": "DONE",
+    "posTitle": "Web POS & Inventory",
+    "posDesc": "Point of Sale and inventory management system for retail stores with Physical Mapping UX/UI.",
+    "tradeTitle": "SMC Trading Automation",
+    "tradeDesc": "Algorithmic trading scripts and EA bots based on Smart Money Concepts.",
+    "hospTitle": "Hospital App Hub",
+    "hospDesc": "Patient data management and queue application for hospital clinics."
+  },
+  "Contact": {
+    "title": "Let's Work Together",
+    "subtitle": "Currently available for freelance work and full-time opportunities.",
+    "emailLabel": "EMAIL",
+    "emailValue": "kangnakub.5264@gmail.com",
+    "locationLabel": "LOCATION",
+    "locationValue": "Ubon Ratchathani, TH",
+    "btnText": "Send an Email",
+    "githubText": "View my GitHub"
+  }
+}
