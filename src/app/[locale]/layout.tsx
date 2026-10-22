@@ -17,23 +17,24 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export async function generateMetadata({ 
-  params 
-}: { 
-  params: Promise<{ locale: string }> 
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params;
   const isThai = locale === 'th';
 
   return {
+    metadataBase: new URL("https://keang-portfolio.vercel.app"), // เพิ่มบรรทัดนี้สำคัญมาก
     title: "Keang | Web Developer Portfolio",
     description: "Web Application Portfolio by Keang",
     openGraph: {
       title: "Keang | Web Developer Portfolio",
-      description: isThai 
-        ? "สร้าง Web Application ที่ตอบโจทย์ธุรกิจ ด้วยรากฐานความปลอดภัย" 
+      description: isThai
+        ? "สร้าง Web Application ที่ตอบโจทย์ธุรกิจ ด้วยรากฐานความปลอดภัย"
         : "Building Web Applications with Security Fundamentals",
-      url: "https://your-vercel-link.vercel.app",
+      url: "https://keang-portfolio.vercel.app", // เปลี่ยนเป็นลิงก์จริงของคุณ
       siteName: "Keang Portfolio",
       images: [
         {
