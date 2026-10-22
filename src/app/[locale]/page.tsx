@@ -34,29 +34,23 @@ export default function Home() {
       {/* ================= Hero Section ================= */}
       {/* เพิ่ม padding-top หนี Navbar */}
       <main className={styles.container} style={{ paddingTop: '100px' }}>
-        <div className={styles.roleBadge}>
-          {tHero('role')}
-        </div>
-        
-        <h1 className={styles.heroTitle}>
-          {tHero('headline')} <br />
-          <span className={styles.highlight}>
-            {tHero('highlight')}
-          </span>
-        </h1>
-        
-        <p className={styles.description}>
-          {tHero('greeting')} {tHero('description')}
-        </p>
+       {/* ตัวอย่างการใส่แอนิเมชันให้ค่อยๆ โผล่มาทีละบรรทัด */}
+<div className={`${styles.roleBadge} ${styles.animateUp}`}>
+  {tHero('role')}
+</div>
 
-        <div className={styles.buttonGroup}>
-          <Link href="#contact" className={styles.btnPrimary}>
-            {tHero('ctaPrimary')}
-          </Link>
-          <Link href="#lab" className={styles.btnSecondary}>
-            {tHero('ctaSecondary')}
-          </Link>
-        </div>
+<h1 className={`${styles.heroTitle} ${styles.animateUp} ${styles.delay1}`}>
+  {tHero('headline')} <br />
+  <span className={styles.highlight}>{tHero('highlight')}</span>
+</h1>
+
+<p className={`${styles.description} ${styles.animateUp} ${styles.delay2}`}>
+  {tHero('greeting')} {tHero('description')}
+</p>
+
+<div className={`${styles.buttonGroup} ${styles.animateUp} ${styles.delay3}`}>
+  {/* โค้ดปุ่มเดิม */}
+</div>
       </main>
 
       {/* ================= Skills Section ================= */}

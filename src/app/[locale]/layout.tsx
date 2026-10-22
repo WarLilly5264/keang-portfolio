@@ -6,6 +6,7 @@ import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -16,10 +17,37 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Keang | Web Developer Portfolio",
-  description: "Web Application Portfolio by Keang",
-};
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: Promise<{ locale: string }> 
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const isThai = locale === 'th';
+
+  return {
+    title: "Keang | Web Developer Portfolio",
+    description: "Web Application Portfolio by Keang",
+    openGraph: {
+      title: "Keang | Web Developer Portfolio",
+      description: isThai 
+        ? "สร้าง Web Application ที่ตอบโจทย์ธุรกิจ ด้วยรากฐานความปลอดภัย" 
+        : "Building Web Applications with Security Fundamentals",
+      url: "https://your-vercel-link.vercel.app",
+      siteName: "Keang Portfolio",
+      images: [
+        {
+          url: "/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Keang Portfolio Preview",
+        },
+      ],
+      locale: isThai ? "th_TH" : "en_US",
+      type: "website",
+    },
+  };
+}
 
 // 2. รับค่า params (ใน Next.js เวอร์ชั่นใหม่ params จะเป็น Promise)
 export default async function RootLayout({
