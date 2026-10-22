@@ -356,3 +356,42 @@
 .githubLink:hover {
   color: #fafafa;
 }
+/* ================= Responsive (Mobile) ================= */
+@media (max-width: 768px) {
+  /* 1. จัดการ Navbar */
+  .navbar {
+    padding: 0 1rem;
+  }
+  
+  .navLinks a {
+    display: none; /* ซ่อนเมนูข้อความบนมือถือ เน้นให้ผู้ใช้เลื่อนจอลงมาเอง */
+  }
+  
+  .langSwitch {
+    border-left: none; /* เอาเส้นคั่นออก */
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  /* 2. จัดการตัวหนังสือและปุ่มใน Hero Section */
+  .heroTitle {
+    font-size: 2.5rem; /* ลดขนาดหัวข้อหลักไม่ให้ล้นจอ */
+  }
+
+  .buttonGroup {
+    flex-direction: column; /* เปลี่ยนปุ่มให้เรียงจากบนลงล่าง */
+    width: 100%;
+  }
+
+  .btnPrimary, .btnSecondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* 3. จัดการ Contact Section */
+  .contactDetails {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+}
